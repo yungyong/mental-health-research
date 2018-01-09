@@ -40,7 +40,7 @@ The survey addresses following issues:
 Data research
 ---
 
-The most people taking part in this survey are from USA. Other people's countries:
+The most people taking part in this survey are from USA. The other people's countries are represented on this plot:
 
 
 ![](https://habrastorage.org/webt/cp/ms/vd/cpmsvdp1z0ohingqclmxdvugkwk.png)
@@ -66,17 +66,30 @@ Between 20 and 40 years they are women, who seek treatment more often, but after
 ![](https://habrastorage.org/webt/qv/e0/9d/qve09dgu_yojydesdsdygbzltpm.png)
 
 
-Random forests' results
+Random Forests' results
 ---
 
-After preparing data and greed search on parameters 'n_estimators', 'criterion', 'max_depth', 'min_samples_leaf'
- for RandomForestClassifier (sklearn), obtained:
+After preparing data and Gridsearch on parameters 'n_estimators', 'criterion', 'max_depth', 'min_samples_leaf'
+ for RandomForestClassifier (sklearn), the following results are obtained:
  
-*  0.80% accuracy
+*  0.80 accuracy
 
 with best parameters:
 
 * 'criterion': 'entropy',
 *  'max_depth': 15,
 *  'min_samples_leaf': 3,
+ * 'n_estimators': 64.
+ 
+ Gradient Boosting results
+ ---
+ After preparing data and Gridsearch on parameters learning_rate', 'n_estimators', 'max_depth'
+  for GradientBoostingClassifier (sklearn), the following results are obtained:
+ 
+*  0.84 accuracy
+
+with best parameters:   
+
+* 'learning_rate': 0.1,
+*  'max_depth': 1,
  * 'n_estimators': 64.
