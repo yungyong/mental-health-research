@@ -2,6 +2,7 @@
 
 This repository contains my research on the mental health issues survey dataset 
 (https://www.kaggle.com/osmi/mental-health-in-tech-survey). 
+
 In this research some correlations are found and 2 models are trained to predict,
  whether a human should seek treatment for a mental health condition or not.
 
@@ -41,8 +42,8 @@ Data research
 
 The most people taking part in this survey are from USA. Other people's countries:
 
-![](https://habrastorage.org/webt/qv/e0/9d/qve09dgu_yojydesdsdygbzltpm.png)
 
+![](https://habrastorage.org/webt/cp/ms/vd/cpmsvdp1z0ohingqclmxdvugkwk.png)
 
 The age has normal distribution with parameters:
 * mean       32.019138
@@ -53,22 +54,23 @@ The age has normal distribution with parameters:
 * 75%        36.000000
 * max        72.000000
 
-![](https://habrastorage.org/webt/9k/tu/zi/9ktuzicun9-giquwqobjzm4tdq4.png)
+![](https://habrastorage.org/webt/hj/i1/9q/hji19q4uenijzktffakkmoomzlu.png)
+
 
 Women and other gender people are more tended to seek treatment, than men.
 
-![](https://habrastorage.org/webt/hj/i1/9q/hji19q4uenijzktffakkmoomzlu.png)
+![](https://habrastorage.org/webt/9k/tu/zi/9ktuzicun9-giquwqobjzm4tdq4.png)
 
 Between 20 and 40 years they are women, who seek treatment more often, but after 40 years – men.
 
+![](https://habrastorage.org/webt/qv/e0/9d/qve09dgu_yojydesdsdygbzltpm.png)
 
-![](https://habrastorage.org/webt/cp/ms/vd/cpmsvdp1z0ohingqclmxdvugkwk.png)
 
 Random forests' results
 ---
 
 After preparing data and greed search on parameters 'n_estimators', 'criterion', 'max_depth', 'min_samples_leaf'
- for RandomForestClassifier (sklearn), obtained
+ for RandomForestClassifier (sklearn), obtained:
  
 *  0.80% accuracy
 
